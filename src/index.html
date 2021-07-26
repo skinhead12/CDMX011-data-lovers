@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no ,initial-scale=1.0", maximum-scale=1.0, minimum-scale=1.0>
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -9,23 +10,41 @@
     <div id="root" class="container">
     <div class="header">
       <div class="image-container">
-        <div class="image"></div>
+        <div class="image">
+          <h1>Guia de personajes Rick & Morty</h1>
+        </div>
       </div>
     </div>
     <div class="section">
       <div class="lot-articles">
-        <div class="articles"></div>
-        <div class="articles"></div>
-        <div class="articles"></div>
-        <div class="articles"></div>
+        <div class="filter">
+          <label>Personajes</label>
+          <select name="categories" id="categories">
+            <option value="name">Nombre</option>
+            <option value="status">Status</option>
+            <option value="gender">Genero</option>
+            <option value="origin">Origen</option>
+            <option value="episode">Episodio</option>
+          </select>
+          <button type="submit">Aceptar</button>
+         </div>
+        <div class="articles" id="articlesData"></div>
+        <div class="pages">
+          <label>Paginas</label>
+         </div>
       </div>
       <div class="curious-data">
-        <div class="curious"></div>
+        <div class="curious">
+          <h4>Datos Curiosos</h4>
+          <p></p>
+        </div>
         <div class="curious"></div>
       </div>
     </div>
     <div class="footer">
-      <div class="pie"></div>
+      <div class="pie">
+        <p>Pagina Realizada por Rocio y Edith xD</p>
+      </div>
     </div>
     </div>
     <script src="main.js" type="module"></script>

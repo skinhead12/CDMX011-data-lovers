@@ -5,7 +5,11 @@
 }
 
 body {
-    background-image: url(./img/fondo-portal.jpg);
+    background-image: url(img/fondo-portal.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+
 }
 
 .container {
@@ -14,55 +18,88 @@ body {
 }
 
 .header {
-    background: gray;
+    background: #EEEEEE;
     display: flex;
     flex-flow: column nowrap;
+     background-size: cover;
+     background-attachment: fixed;
+     background-image: url(../img/images02.jpg);
 }
         .image-container{
-            background: lightskyblue;
+            background: rgba(0,0,0,0,.1);
             display: flex;
             flex-flow: row nowrap;
         }
                 .image{
-                    background-image: url(..\img\images.jpg);
+                    
                     flex: auto;
+                    text-align: center;
+                   
                 }
 
 .section{
-    background: gray;
+    background: #EEEEEE;
     display: flex;
-    flex-flow: column nowrap;
 }
+                    
+
             .lot-articles{
                 background: lightskyblue;
                 display: flex;
-                flex-flow: row nowrap;
+                flex: 2 1 auto;
+                flex-flow: row wrap;
+
+            }
+            .filter{
+                background: yellow;
+                flex: 1 1 100%;
+                text-align: center;
             }
 
             .articles{
                 background: yellow;
-                flex: 1 1 auto;
+                flex: 1 1 40%;
             }
-            .articles{
+            .pages{
                 background: yellow;
-                flex: 1 1 auto;
+                flex: 1 1 100%;
             }
-            .articles{
-                background: yellow;
-                flex: 1 1 auto;
-            }
-            .articles{
-                background: yellow;
+
+            .curious-data{
+                background: lightskyblue;
                 flex: 1 1 auto;
             }
 
+            .curious{
+                background: yellow;
+                flex: 1 1 40%;
+            }
 
 .footer {
-    background: gray;
+    background: #EEEEEE;
 }
 
           .pie{
              background: lightskyblue;
              display: flex;
              flex-flow: column nowrap;
+             text-align: center;
              }
+
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .curious-data{
+        display: flex;
+        justify-content: center;
+    }
+}    
+
+@media all and (max-width: 600px) {
+    .lot-articles{
+        flex-direction: column;
+    }
+
+    
+}
