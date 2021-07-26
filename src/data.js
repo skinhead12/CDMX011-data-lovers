@@ -1,13 +1,14 @@
 // estas funciones son de ejemplo
 // filterData(data, condition)
 // sortData(data, sortBy, sortOrder)
+import rym from './data/rickandmorty/rickandmorty.js';
+export let info = rym.results;
 
-
-export const test = () => {
-  return 'test';
+export const example = () => {
+  return 'example';
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+/* export const rym = () => {
+  return 'rym';
+}; */
 
