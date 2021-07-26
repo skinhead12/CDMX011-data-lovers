@@ -99,7 +99,37 @@ body {
 @media all and (max-width: 600px) {
     .lot-articles{
         flex-direction: column;
-    }
+    }    
+}
 
+ul {
+    list-style:none;
+}
+.nav li a {
+    background-color:#000;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 15px;
+    display:block;
+}
+.nav>li{
+    float:none;
+}
+
+/*cambiar de color al pasar el mouse*/
+.nav li a:hover {
+    background-color:#434343;
+}
+
+
+/*se contrae elmenu*/
+.nav  li ul  {
+    display: none;
     
+    min-width:140px;
+}
+
+/*aparece el resto del menu al pasar el mouse*/
+.nav li:hover > ul { /*los li que esten dentro de nav en su subclase hover que aparezca que sean directos de ul*/
+    display:block;
 }

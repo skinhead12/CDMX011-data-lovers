@@ -1,19 +1,29 @@
-//import { template } from '@babel/core';
-import { example, info } from './data.js';
-// import data from './data/lol/lol.js';
-//import data from './data/pokemon/pokemon.js';
- import rym from './data/rickandmorty/rickandmorty.js';
+import { example } from './data.js';
+import {info} from './data.js';
 
- console.log(example, rym);
-// evento, manipulacion del DOM
+import rickMorty from './data/rickandmorty/rickandmorty.js';
 
-allCharacters();
-    function allCharacters(){
-        info.map((objeto) =>{
-        let all = document.createElement('p');
-        all.classList.add("allchar");
-        const template = `<h1 class='name'> ${objeto.name} </h1><img src = ${objeto.image} class = 'image'></img>`
-        all.innerHTML = template;
-        document.getElementById('articles').appendChild(all);
-    });
-}
+console.log(example, rickMorty);
+
+
+//Importar el filtro de especies para mostrar en consola Humans
+import { speciesFilter } from './data.js';
+console.log(speciesFilter);
+
+//Importar el acomodo de A-Z por nombre
+import { sortName } from './data.js';
+console.log(sortName);
+
+//Para mostrar la imagen y nombre de los personajes
+allCharacters() ;
+    function allCharacters() { //declaramos funcion
+        info.map((objeto)=>{ // creando nvo array a info con map
+          let all = document.createElement('all'); //creando variable all
+          all.classList.add("allchar"); //anade la clase all chart 
+          //creamos constante template para mostrar el nombre del personaje y la imagen
+          const template = `<h1 class='name'> ${objeto.name}</h1> 
+          <img src = ${objeto.image} class = 'image'> </img>`
+          all.innerHTML = template; //remplaza el contenido de all por template
+          document.getElementById('articles').appendChild(all); //devuelve elemento content y agrego all a content. Nodo all se adjunta a nodo padre content
+        });
+      }
