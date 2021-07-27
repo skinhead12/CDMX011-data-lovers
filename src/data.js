@@ -1,4 +1,3 @@
-
 import rickMorti from './data/rickandmorty/rickandmorty.js';
 
 
