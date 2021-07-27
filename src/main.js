@@ -1,15 +1,3 @@
-import { example } from './data.js';
-import {info} from './data.js';
-
-import rickMorty from './data/rickandmorty/rickandmorty.js';
-
-console.log(example, rickMorty);
-
-
-//Importar el filtro de especies para mostrar en consola Humans
-import { speciesFilter } from './data.js';
-console.log(speciesFilter);
-
 //Importar el acomodo de A-Z por nombre
 import { sortName } from './data.js';
 console.log(sortName);
@@ -24,7 +12,6 @@ allCharacters() ;
           const template = `<h1 class='name'> ${objeto.name}</h1> 
           <img src = ${objeto.image} class = 'image'> </img>`
           all.innerHTML = template; //remplaza el contenido de all por template
-          document.getElementById('content').appendChild(all); //devuelve elemento content y agrego all a content. Nodo all se adjunta a nodo padre content
+          document.getElementById('articles').appendChild(all); //devuelve elemento content y agrego all a content. Nodo all se adjunta a nodo padre content
         });
       }
-  
