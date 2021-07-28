@@ -1,4 +1,3 @@
-
 import rickMorti from './data/rickandmorty/rickandmorty.js';
 
 
@@ -33,4 +32,3 @@ export const example = () => {
  //export const pictures = info.filter((image) => {
   //return image;
 //});
-
