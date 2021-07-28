@@ -1,11 +1,10 @@
 *{
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
     box-sizing: border-box;
 }
 
 body {
-    
     background-size: cover;
     background-attachment: fixed;
     color: black;
@@ -29,68 +28,39 @@ body {
                     
 
             .lot-articles{
-                background: lightskyblue;
+                background: #77ACF1;
                 display: flex;
-                flex: 2 1 75%;
+                flex: 2 1 50%;
                 flex-flow: row wrap;
 
             }
-            .filter{
-                background: yellow;
-                flex: 1 1 100%;
-                text-align: center;
-            }
 
             .articles{
-                background: yellow;
+                background: #3EDBF0;
                 display: flex;
                 flex: 2 1 auto;
                 flex-flow: row wrap;
             }
-            /*.card{
-                position:relative;
-                transform-style: preserve-3d;
-                transition: all 0.8s ease;
-            }
-            .front{
-                position: absolute;
-                backface-visibility: hidden;
-                background: yellow;
-                color: black;
-                text-align: center;
-            }
-            .back{
-                position: absolute;
-                backface-visibility: hidden;
-                background:purple;
-                color: white;
-                text-align: center;
-                transform: rotateY(180deg);
-            }
-            .flipcard{
-                transform:rotateY(180deg);
-            }*/
                 .image{
                     flex: 3 1 30%;
                     height: 180px;
                     width: 180px;
                 }
-                .name, .gender, .species, .origin{
+                .name, .species, .gender ,.origin{
                     font-size: small;
                 }
             .pages{
-                background: yellow;
+                background: #3EDBF0;
                 flex: 1 1 100%;
             }
 
             .curious-data{
-                background: lightskyblue;
-                flex: 1 1 25%;
+                background: #77ACF1;
+ 
             }
 
             .curious{
-                background: yellow;
-                flex: 1 1 30%;
+                background: #3EDBF0;
             }
 
 .footer {
@@ -98,7 +68,7 @@ body {
 }
 
           .pie{
-             background: lightskyblue;
+             background: #77ACF1;
              display: flex;
              flex-flow: column nowrap;
              text-align: center;
@@ -140,14 +110,16 @@ ul {
 }
 
 
-/*se contrae elmenu*/
-.nav  li ul  {
-    display: none;
+/* se contrae el menu */
+/* .nav  li ul */ 
+/*.species, .gender, .seasons, .origin {
+    display: block;
     
     min-width:140px;
-}
+}*/
 
-/*aparece el resto del menu al pasar el mouse*/
-.nav li:hover > ul { /*los li que esten dentro de nav en su subclase hover que aparezca que sean directos de ul*/
+/* aparece el resto del menu al pasar el mous, los li que esten dentro de nav en su subclase 
+hover que aparezca que sean directos de ul */
+.nav li:hover > ul { 
     display:block;
-}
+} 
