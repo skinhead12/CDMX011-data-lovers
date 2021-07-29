@@ -1,7 +1,6 @@
-import rickMorty from './data/rickandmorty/rickandmorty.js';
+import data from './data/rickandmorty/rickandmorty.js';
 
-
-export let info = rickMorty.results;
+let info = data.results;
 
 
 export const sortName = info.sort((a, b) => {

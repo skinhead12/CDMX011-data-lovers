@@ -1,7 +1,9 @@
-import { info, speciesFilter, sortName } from './data.js';
+import data from './data/rickandmorty/rickandmorty.js';
+let info = data.results
+
+import { speciesFilter, sortName } from './data.js';
 
 console.log(speciesFilter, sortName);
-
 
 //Para mostrar la imagen y nombre de los personajes
 allCharacters();
