@@ -1,0 +1,97 @@
+*{
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/fondo-portal.png);
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+
+}
+   
+.container{
+    padding-left: 10rem;
+    padding-top: 0px;
+    padding-right: 0px;
+}
+
+.section{
+    display: flex;
+    flex-flow: column nowrap;
+    background: #8CBA51;
+    
+    
+}
+                    
+
+            .lot-articles{
+                background: #EEEEEE;
+                display: flex;
+                flex: 2 1 50%;
+                flex-flow: row wrap;
+
+            }
+
+            .articles{
+                background: #FFF3AF;
+                display: flex;
+                flex: 2 1 auto;
+                flex-flow: row wrap;  
+                            
+            }
+                .image{
+                    flex: 3 1 30%;
+                    height: 180px;
+                    width: 180px;
+                }
+                .name, .species, .gender ,.origin{
+                    font-size: small;
+                }
+            .pages{
+                background: #FFF3AF;
+                flex: 1 1 100%;
+            }
+
+.footer {
+    background: #8CBA51;
+}
+
+          .pie{
+             background: #FFF3AF;
+             display: flex;
+             flex-flow: column nowrap;
+             text-align: center;
+             }
+
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .curious-data{
+        display: flex;
+        justify-content: center;
+    }
+}    
+
+@media all and (max-width: 600px) {
+    .lot-articles{
+        flex-direction: column;
+    }    
+}
+.container-select{
+    display: flex;
+    flex-flow: column nowrap;
+    background: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+label{
+    text-align: left;
+    color: white;
+}
