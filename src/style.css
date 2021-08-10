@@ -5,7 +5,8 @@
 }
 
 body {
-    background-image: url(../img/fondo-portal.jpg);
+  background-image: url(../img/fondo-portal.jpg);
+    /*    background-image: url(../img/imagen-fondo-tarjeta.jpg);*/
     background-size: cover;
     background-attachment: fixed;
     color: black;
@@ -22,12 +23,12 @@ body {
     display: flex;
     flex-flow: column nowrap;
     background: #8CBA51;
-    
-    
 }
 
 .tarjetas {
-    perspective: 1000px;
+   /* background-image: url(../img/imagen-fondo-tarjeta.jpg);*/
+   /*  background-image: url(../img/fondo-portal.jpg);*/
+     background: #FFF3AF;
     height: 470px;
     width: 250px; 
     margin: 15px ;
@@ -57,7 +58,9 @@ body {
             }
 
             .articles{
-                background: #FFF3AF;
+                /* background-image: url(../img/imagen-fondo-tarjeta.jpg);*/
+                /*  background-image: url(../img/fondo-portal.jpg);*/
+                 background: #FFF3AF;
                 display: flex;
                 flex: 2 1 auto;
                 flex-flow: row wrap;  
