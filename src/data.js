@@ -4,7 +4,7 @@ import data from './data/rickandmorty/rickandmorty.js';
 export let info = data.results;
 export const example = () => {
   return 'example';
- };
+};
 
 // filtrar por especie 
 export const speciesFilter = (data, tipo) => {
@@ -15,46 +15,55 @@ export const speciesFilter = (data, tipo) => {
 export const genderFilter = (data, genero) => {
   let resultGender = data.filter(personaje => personaje.gender === genero)
   return resultGender;
-  
+
 }
 // funcion filtrar por episodio
+const findElement = (list, episode) => {
+	return list.filter((ele) => ele.episode == episode);
+};
+
 export const episodesFilter = (data, episodios) => {
-  let resultEpisodes = data.filter(personaje => personaje.episode === episodios)
- return resultEpisodes;
-}
+	const resultEpisodes = data.filter((personaje)=>personaje.episode.includes(episodios))
+	
+	
+
+	console.log(resultEpisodes);
+
+	return resultEpisodes;
+};
 
 // funcion orden ascendente y descendente 
   export const sortFilter = (data, seleccion) => {
-      
-    if(seleccion === "upward") {
-      data.sort((a,b) => {
-        a = a.name.toLowerCase();
-        b = b.name.toLowerCase();
-        
-        if(a > b) {
-          return 1;
-        }
-        if(a < b) {
-          return -1;
-        }
-        return 0;
-      
-      });
-      return data;
-    }
-      if(seleccion === "downward") {
-      data.sort((a,b) => {
-        a = a.name.toLowerCase();
-        b = b.name.toLowerCase();
-        
-        if(a > b) {
-          return -1;
-        }
-        if(a < b) {
-          return 1;
-        }
-        return 0;
-      });
-     return data;
-    }
+
+  if (seleccion === "upward") {
+    data.sort((a, b) => {
+      a = a.name.toLowerCase();
+      b = b.name.toLowerCase();
+
+      if (a > b) {
+        return 1;
+      }
+      if (a < b) {
+        return -1;
+      }
+      return 0;
+
+    });
+    return data;
   }
+  if (seleccion === "downward") {
+    data.sort((a, b) => {
+      a = a.name.toLowerCase();
+      b = b.name.toLowerCase();
+
+      if (a > b) {
+        return -1;
+      }
+      if (a < b) {
+        return 1;
+      }
+      return 0;
+    });
+    return data;
+  }
+}

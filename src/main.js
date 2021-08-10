@@ -6,7 +6,7 @@ import data from './data/rickandmorty/rickandmorty.js';
 
 function allCharacters(data) { //declaramos funcion
   let all = ''
-  data.forEach((objeto) => { // creando nvo array a info con map
+  data.forEach((objeto) => { // creando nvo array a info con foreach
           
           //concatenamos all con el template para mostrar el nombre del personaje y la imagen
   all += `<div class="tarjetas"><h1 class='name'> Name: ${objeto.name}</h1> <h2 class="gender">Gender: ${objeto.gender}</h2><h3 class="species"> Specie: ${objeto.species}</h3><h4 class='origin'> Origin: ${objeto.origin.name}</h4>
@@ -21,26 +21,31 @@ allCharacters(info);
 // funcion change en select species
       
 document.getElementById("species").addEventListener("change", function(e) {
-  console.log(speciesFilter(info, e.target.value));
+    let filteredData= speciesFilter(info,e.target.value);
+    console.log(filteredData)
+    allCharacters(filteredData)
 })
 
 // funcion change en select gender
 document.getElementById("gender").addEventListener("change", function(e) {
- 
-console.log(genderFilter(info, e.target.value));
+ let filteredData= genderFilter(info,e.target.value);
+console.log(filteredData)
+allCharacters(filteredData)
 })
 
 // funcion change en select episodes
 document.getElementById("episodes").addEventListener("change", function(e) {
-console.log(episodesFilter(info, e.target.value));
+    let filteredData= episodesFilter(info,e.target.value);
+    console.log(filteredData)
+    allCharacters(filteredData)
 })
 
 // funcion change en select orden az-za
 document.getElementById('ordenA').addEventListener('change', function(e) {
 
-  let filteredData = sortFilter(info, e.target.value);
-  console.log(filteredData)
-  allCharacters(filteredData)
+  let filteredDataSort = sortFilter(info, e.target.value);
+  console.log(filteredDataSort)
+  allCharacters(filteredDataSort)
  
 })
 

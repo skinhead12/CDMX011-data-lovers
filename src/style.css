@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(../img/fondo-portal.png);
+    background-image: url(../img/fondo-portal.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: black;
@@ -25,6 +25,27 @@ body {
     
     
 }
+
+.tarjetas {
+    perspective: 1000px;
+    height: 470px;
+    width: 250px; 
+    margin: 15px ;
+    padding: 40px;
+    border: solid 4px rgb(0, 255, 0);
+    box-shadow: rgb(255, 115, 0) 0px 0px 10px;
+    border-radius: 20px;
+   box-sizing: border-box; 
+   
+   
+  
+  }
+  
+  .tarjetas:hover {
+    border: solid 4px rgb(0, 162, 255);
+    box-shadow: rgb(0, 174, 255) 0px 0px 20px;
+  
+  }
                     
 
             .lot-articles{
