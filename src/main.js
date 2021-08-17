@@ -9,8 +9,8 @@ function allCharacters(data) { //declaramos funcion
   data.forEach((objeto) => { // creando nvo array a info con foreach
           
           //concatenamos all con el template para mostrar el nombre del personaje y la imagen
-  all += `<div class="tarjetas"><div class="front-card"><img src = ${objeto.image} class="image"> </img></div>
-          <div class="back-card"><h1 class='name'> Name: ${objeto.name}</h1> <h2 class="gender">Gender: ${objeto.gender}</h2><h3 class="species"> Specie: ${objeto.species}</h3><h4 class='origin'> Origin: ${objeto.origin.name}</h4></div></div>`
+  all += `<div class="tarjetas"><div class="front-card"><img src = ${objeto.image} class="image"> </img><h1 class='name'> ${objeto.name}</h1></div>
+          <div class="back-card"> <h2 class="gender">Gender: ${objeto.gender}</h2><h3 class="species"> Specie: ${objeto.species}</h3><h4 class='origin'> Origin: ${objeto.origin.name}</h4></div></div>`
   });   //
 
   document.getElementById('articles').innerHTML = all; //devuelve elemento content y agrego all a content. Nodo all se adjunta a nodo padre content
