@@ -1,10 +1,11 @@
+/* modifica todo el contenido */
 * {
   margin: 5px;
   padding: 10px;
   box-sizing: border-box;
 }
 
-
+ /* estilo del filtro  */
 .container-select {
   background-color: rgba(128, 128, 128, 0.522);
   display: flex;
@@ -15,26 +16,28 @@
   height: 100%;
   
 }
-
+/* etiquetas del filtro */
 label {
   text-align: left;
   color: white;
   font-family: "Palette Mosaic", cursive;
 }
 
+/* imagen de fondo  */
 body {
   background-image: url(../img/fondo-portal.png); 
   background-size: cover;
   background-attachment: fixed;
   /* color: black; */
 }
-
+/* container padre (principal) */
 .container {
   padding-left: 10rem;
   padding-top: 0px;
   padding-right: 0px;
 }
 
+/* estilo de tarjetas */
 .tarjetas {
   perspective: 1000px;
   height: 300px;
@@ -52,13 +55,15 @@ body {
   /* margin-right: auto; */
 }
 
-
+/* efecto tarjetas */
 .tarjetas:hover {
   border: solid 4px rgb(0, 162, 255);
   box-shadow: rgb(255, 115, 0) 0px 0px 10px;
   transform: rotateY(180deg);
 }
 
+
+/* tarjeta parte frontal */
 .front-card {
   margin-top: -10%;
   height: 300px;

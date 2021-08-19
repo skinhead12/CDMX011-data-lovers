@@ -1,6 +1,8 @@
 import { example } from '../src/data.js';
 import { speciesFilter, genderFilter, sortFilter, episodesFilter } from '../src/data.js';
 
+
+// funcion test ejemplo
 describe('example', () => {
   it('is a function', () => {
     expect(typeof example).toBe('function');
@@ -10,6 +12,8 @@ describe('example', () => {
     expect(example()).toBe('example');
   });
 });
+
+// funciones de filtros 
 describe('speciesFilter', () => {
   it('is a function', () => {
     expect(typeof speciesFilter).toBe('function');
