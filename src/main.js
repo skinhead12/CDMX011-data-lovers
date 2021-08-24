@@ -4,7 +4,9 @@ import {info, speciesFilter, genderFilter, episodesFilter, sortFilter } from './
 
 //Para mostrar la imagen y nombre de los personajes
 
+
 function printCharacters(data) { //declaramos funcion
+
   let all = ''  // declaramo all vacio ya que se guardaran los datos en esa variable
   data.forEach((objeto) => { // serealiza un foreach para verificar los datos del arreglo
           
@@ -16,7 +18,9 @@ function printCharacters(data) { //declaramos funcion
   document.getElementById('articles').innerHTML = all; //devuelve elemento content y agrego all a content. Nodo all se adjunta a nodo padre content
 }
 // meto argumento info en mi funcion allCharacters, ahi cambiare argumento para que guarde los datos nuevos que se le metan 
+
 printCharacters(info);
+
 
 // funcion change en select species(especies)
 document.getElementById("species").addEventListener("change", function(e) {

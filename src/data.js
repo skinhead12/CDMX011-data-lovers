@@ -2,7 +2,11 @@ import data from './data/rickandmorty/rickandmorty.js';
 
 // funcion de ejemplo
 export let info = data.results;
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> cf2a44193c33c2ce01dec134ddca3267a150e52a
 // usando arrow function
 // filtrar por especie 
 export const speciesFilter = (data, tipo) => {
