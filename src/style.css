@@ -28,7 +28,7 @@ body {
   background-image: url(../img/fondo-portal.png); 
   background-size: cover;
   background-attachment: fixed;
-  /* color: black; */
+  
 }
 /* container padre (principal) */
 .container {
@@ -49,10 +49,6 @@ body {
   transform-style: preserve-3d;
   transition: all 0.5s ease;
   background-color: #FFF7AE;
- 
-  /* background: #fff3af; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
 }
 
 /* efecto tarjetas */
@@ -67,39 +63,29 @@ body {
 .front-card {
   margin-top: -10%;
   height: 300px;
-  /* width: 190px; */
   backface-visibility: hidden;
   display: flex;
   flex-flow: column nowrap;
   border-radius: 40%;
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
 
 .front-card h1 {
-  /* margin-top: 10px; */
   font-size: 15px;
   font-family: "Palette Mosaic", cursive;
   text-align: center;
-  /* justify-content: space-around; */
 }
 
 .back-card {
   height: 250px;
-  /* width: 190px; */
   backface-visibility: hidden;
   transform: rotateY(180deg);
   display: flex;
   flex-flow: column nowrap;
-  /* border-radius: 40%; */
   justify-content: space-around;
-  /* position:center; */
-  /* justify-content: center; */
   margin-top: -280px;
 }
 
-/* .back-card h1, */
 h2,
 h3,
 h4 {
@@ -144,9 +130,7 @@ h4 {
 .image {
   border-radius: 30%;
   flex: 3 1 40%;
-  /* height: 180px; */
-  /* width: 180px; */
-  /* position: relative; */
+  
 }
 
 
